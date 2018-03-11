@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package App;
+import Entities.Bill;
 import Entities.Person;
 import Entities.Book;
 /**
@@ -16,7 +17,8 @@ public class Library {
         
         Person p = new Person(36124099, "Leonardo Barberis");
         Book b = new Book(1,"The Bible");
-        System.out.println(p.toString()+" has "+b.toString());
+        Bill bill = new Bill(12135,145);
+        System.out.println(p.toString()+" has "+b.toString()+", and it cost "+bill.getPrice()+"$");
         
     }
     
