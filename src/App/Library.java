@@ -5,6 +5,7 @@
  */
 package App;
 import Entities.Person;
+import Entities.Book;
 /**
  *
  * @author ratzinger
@@ -14,7 +15,8 @@ public class Library {
     public static void main(String[] args) {
         
         Person p = new Person(36124099, "Leonardo Barberis");
-        System.out.println(p.toString());
+        Book b = new Book(1,"The Bible");
+        System.out.println(p.toString()+" has "+b.toString());
         
     }
     
