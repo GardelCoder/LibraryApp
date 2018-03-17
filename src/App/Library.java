@@ -7,6 +7,7 @@ package App;
 import Entities.Bill;
 import Entities.Person;
 import Entities.Book;
+import Entities.Item;
 /**
  *
  * @author ratzinger
@@ -18,7 +19,9 @@ public class Library {
         Person p = new Person(36124099, "Leonardo Barberis");
         Book b = new Book(1,"The Bible");
         Bill bill = new Bill(12135,145);
-        System.out.println(p.toString()+" has "+b.toString()+", and it cost "+bill.getPrice()+"$");
+        Item item = new Item(b, 1);
+        
+        System.out.println(p.toString()+" has "+item.toString()+", and it cost "+bill.getPrice()+"$");
         
     }
     
